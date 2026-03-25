@@ -33,7 +33,7 @@ AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "").spli
 REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "-1002505014127")) and id_pattern.search(ch) else None
 SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "-1002401879443")) and id_pattern.search(ch) else None
 
-OWNER = int(os.environ.get("OWNER", "1255023013"))
+OWNER = int(os.environ.get("OWNER", "6522435665"))
 CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/AkMovieVerse')
 GROUP_LINK = environ.get('GROUP_LINK', 'https://t.me/+XkULu0nROB80MmY9')
 
@@ -71,7 +71,7 @@ FAST_MODE = is_enabled(environ.get('FAST_MODE', "False"), False)
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 MAX_BTNS = environ.get("MAX_BTNS", "5")
 MSG_ALRT = environ.get('MSG_ALRT', '𝖲𝗁𝖺𝗋𝖾 & 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖬𝖾 ♥️')
-DELETE_TIME = int(environ.get("DELETE_TIME", "300"))
+DELETE_TIME = int(environ.get("DELETE_TIME", "2400"))
 FILE_CAPTION = environ.get("FILE_CAPTION", f"{script.CAPTION}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 MAX_LIST_ELM = int(environ.get("MAX_LIST_ELM") or 10) or None # Maximum number of elements in a list (default: 10, set 0 for no limit)
