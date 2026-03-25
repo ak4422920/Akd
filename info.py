@@ -89,7 +89,7 @@ PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 EMOJI_MODE = bool(environ.get('EMOJI_MODE', True))
 BUTTON_MODE = is_enabled((environ.get('BUTTON_MODE', "False")), False)
 STREAM_MODE = bool(environ.get('STREAM_MODE', True))
-PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', True))
+PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', False))
 
 LANGUAGES = {"ᴛᴀᴍɪʟ":"tam","ᴛᴇʟᴜɢᴜ":"tel","ᴇɴɢʟɪsʜ":"eng","ʜɪɴᴅɪ":"hin","ᴊᴀᴘᴀɴᴇsᴇ":"jap"}
 QUALITIES = ["360P", "480P", "720P", "1080P", "2160p"]
@@ -100,7 +100,7 @@ STAR_PREMIUM_PLANS = {20: "7day", 40: "15day", 60: "1month", 75: "45day", 90: "6
 BAD_WORDS = {"PrivateMovieZ", "toonworld4all", "themoviesboss", "1tamilmv", "tamilblasters", "1tamilblasters", "skymovieshd", "extraflix", "hdm2", "moviesmod", "hdhub4u", "mkvcinemas", "primefix", "join", "www", "villa", "tg", "original"}
 
 IS_FILE_LIMIT = bool(environ.get('IS_FILE_LIMIT', True)) 
-FILES_LIMIT = int(environ.get("FILES_LIMIT", "25"))
+FILES_LIMIT = int(environ.get("FILES_LIMIT", "30"))
 QUALITY_LIMIT = bool(environ.get('QUALITY_LIMIT', False)) 
 FREE_QUALITIES = ["360p", "480p"]
 
