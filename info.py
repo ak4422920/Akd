@@ -38,8 +38,8 @@ CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/AkMovieVerse')
 GROUP_LINK = environ.get('GROUP_LINK', 'https://t.me/+XkULu0nROB80MmY9')
 
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "filter")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 
