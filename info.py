@@ -101,7 +101,7 @@ BAD_WORDS = {"PrivateMovieZ", "toonworld4all", "themoviesboss", "1tamilmv", "tam
 
 IS_FILE_LIMIT = bool(environ.get('IS_FILE_LIMIT', True)) 
 FILES_LIMIT = int(environ.get("FILES_LIMIT", "15"))
-QUALITY_LIMIT = bool(environ.get('QUALITY_LIMIT', True)) 
+QUALITY_LIMIT = bool(environ.get('QUALITY_LIMIT', False)) 
 FREE_QUALITIES = ["360p", "480p"]
 
 PORT = int(environ.get("PORT", "8080"))
