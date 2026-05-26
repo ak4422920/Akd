@@ -23,7 +23,7 @@ COVER = bool(environ.get('COVER', False))
 PICS = (environ.get('PICS', 'https://i.ibb.co/5Xz3zxqk/photo-2026-02-17-02-51-43-7607661436667428880.jpg')).split()
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://i.ibb.co/2769f1rF/photo-2025-09-03-14-48-34-7548400762112442372.jpg")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1049173662').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001769437975 -1003672976294').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001769437975 -1003672976294 -1003672976294 -1003756124637').split()]
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002241963214'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002241963214'))
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002260577001'))
@@ -43,11 +43,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 
-UPDATE_NOTIFICATION = bool(environ.get('UPDATE_NOTIFICATION', False))
-UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', '-1003692395359'))
+UPDATE_NOTIFICATION = bool(environ.get('UPDATE_NOTIFICATION', True))
+UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', '-1003748470286'))
 IMAGE_FETCH = bool(environ.get('IMAGE_FETCH', True))
-LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', False))
-ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', False))
+LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', True))
+ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', True))
 TMDB_API_KEY = environ.get('TMDB_API_KEY', '56b50689afe7438a51aab0d653679865')
 TMDB_POSTER = bool(environ.get('TMDB_POSTER', True))
 LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True))
@@ -100,7 +100,7 @@ STAR_PREMIUM_PLANS = {20: "7day", 40: "15day", 60: "1month", 75: "45day", 90: "6
 BAD_WORDS = {"PrivateMovieZ", "toonworld4all", "themoviesboss", "1tamilmv", "tamilblasters", "1tamilblasters", "skymovieshd", "extraflix", "hdm2", "moviesmod", "hdhub4u", "mkvcinemas", "primefix", "join", "www", "villa", "tg", "original"}
 
 IS_FILE_LIMIT = bool(environ.get('IS_FILE_LIMIT', True)) 
-FILES_LIMIT = int(environ.get("FILES_LIMIT", "48"))
+FILES_LIMIT = int(environ.get("FILES_LIMIT", "30"))
 QUALITY_LIMIT = bool(environ.get('QUALITY_LIMIT', False)) 
 FREE_QUALITIES = ["360p", "480p"]
 
