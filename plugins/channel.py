@@ -502,7 +502,7 @@ def generate_movie_message(movie_doc, base_name):
     caption_lines = []
     caption_lines.append("<blockquote>📫 𝖭𝖤𝖶 𝖥𝖨𝖫𝖤 𝖠𝖣𝖣𝖤𝖣 ✅</blockquote>")
     caption_lines.append("")
-    caption_lines.append(f"🚧  Title : {base_name}")
+    caption_lines.append(f"🚧  Title : <code>{base_name}</code>")
     language_str = ", ".join(sorted(all_languages)) if all_languages else "English"
     caption_lines.append(f"🎧 𝖠𝗎𝖽𝗂𝗈 : {language_str}")
     caption_lines.append(f"🔖 Type : {content_type}")
