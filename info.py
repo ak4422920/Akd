@@ -88,19 +88,19 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), False)
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 EMOJI_MODE = bool(environ.get('EMOJI_MODE', True))
 BUTTON_MODE = is_enabled((environ.get('BUTTON_MODE', "False")), False)
-STREAM_MODE = bool(environ.get('STREAM_MODE', True))
-PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', False))
+STREAM_MODE = bool(environ.get('STREAM_MODE', False))
+PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', True))
 
 LANGUAGES = {"ᴛᴀᴍɪʟ":"tam","ᴛᴇʟᴜɢᴜ":"tel","ᴇɴɢʟɪsʜ":"eng","ʜɪɴᴅɪ":"hin","ᴊᴀᴘᴀɴᴇsᴇ":"jap"}
 QUALITIES = ["360P", "480P", "720P", "1080P", "2160p"]
 SEASON_COUNT = 12
 SEASONS = [f"S{str(i).zfill(2)}" for i in range(1, SEASON_COUNT + 1)]
 REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"]
-STAR_PREMIUM_PLANS = {20: "7day", 40: "15day", 60: "1month", 75: "45day", 90: "60day"}
+STAR_PREMIUM_PLANS = {20: "7day", 40: "15day", 70: "1month", 85: "45day", 99: "60day"}
 BAD_WORDS = {"PrivateMovieZ", "toonworld4all", "themoviesboss", "1tamilmv", "tamilblasters", "1tamilblasters", "skymovieshd", "extraflix", "hdm2", "moviesmod", "hdhub4u", "mkvcinemas", "primefix", "join", "www", "villa", "tg", "original"}
 
 IS_FILE_LIMIT = bool(environ.get('IS_FILE_LIMIT', True)) 
-FILES_LIMIT = int(environ.get("FILES_LIMIT", "30"))
+FILES_LIMIT = int(environ.get("FILES_LIMIT", "15"))
 QUALITY_LIMIT = bool(environ.get('QUALITY_LIMIT', False)) 
 FREE_QUALITIES = ["360p", "480p"]
 
