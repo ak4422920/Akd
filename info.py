@@ -64,7 +64,7 @@ SHORTENER_API2 = environ.get("SHORTENER_API2", "a236cdf68649bcdf6eaba5f1119eacac
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "vplink.in")
 SHORTENER_API3 = environ.get("SHORTENER_API3", "28a9d50fc1c6c070c68992e157fcd0fd9d3a9f2a")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "gplinks.com")
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "28800"))
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "28800"))
 
 FAST_MODE = is_enabled(environ.get('FAST_MODE', "False"), False)
